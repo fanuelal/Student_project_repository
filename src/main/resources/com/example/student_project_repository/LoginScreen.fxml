@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_project_repository.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="238.0" style="-fx-background-color: linear-gradient(from 25px 25px to 150px 300px , #2338a6, #030a2e);">
+         <children>
+            <ImageView fitHeight="297.0" fitWidth="247.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@studentRepoAssets/pro3.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="27.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Project Repo">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="238.0" prefHeight="400.0" prefWidth="361.0">
+         <children>
+            <AnchorPane id="loginSmallBox" layoutX="67.0" layoutY="112.0" prefHeight="208.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 300px , #2338a6, #030a2e); -fx-border-radius: 30; fx-background-radius: 30;">
+               <children>
+                  <AnchorPane layoutX="12.0" layoutY="50.0" prefHeight="28.0" prefWidth="215.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextField fx:id="usrName" layoutX="34.0" prefHeight="28.0" prefWidth="184.0" promptText="User ID" style="-fx-border: none; -fx-background-color: #bbbbbf; -fx-border-color: NONE;">
+                           <font>
+                              <Font name="Agency FB" size="12.0" />
+                           </font></TextField>
+                        <ImageView fitHeight="37.0" fitWidth="23.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@studentRepoAssets/user2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Hyperlink fx:id="frgtLink" layoutX="117.0" layoutY="130.0" prefHeight="24.0" prefWidth="103.0" text="Forgot Password?" />
+                  <Button fx:id="guestBtn" layoutX="137.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: white;" text="As Guest" textFill="#1c81e0" />
+                  <CheckBox fx:id="rememberBtn" layoutX="32.0" layoutY="133.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="87.0" style="-fx-background-color: none;" text="Remember" textFill="WHITE">
+                     <font>
+                        <Font name="HP Simplified Jpan Regular" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <Button fx:id="loginBtn" layoutX="23.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: white;" text="Login" textFill="#1f84d0" />
+                  <AnchorPane layoutX="12.0" layoutY="89.0" prefHeight="28.0" prefWidth="215.0" style="-fx-background-color: white;">
+                     <children>
+                        <PasswordField fx:id="psswrd" layoutX="38.0" prefHeight="28.0" prefWidth="177.0" style="-fx-background-color: #bbbbbf;" />
+                        <ImageView fitHeight="37.0" fitWidth="23.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@studentRepoAssets/lock.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="28.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@studentRepoAssets/login.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="closeBtn" layoutX="311.0" layoutY="1.0" mnemonicParsing="false" opacity="0.87" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@studentRepoAssets/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="59.0" fitWidth="78.0" layoutX="161.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@studentRepoAssets/user.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="alertBox" layoutX="14.0" layoutY="326.0" prefHeight="59.0" prefWidth="337.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-color-radius: 10;">
+               <children>
+                  <Label fx:id="alertText" layoutX="93.0" layoutY="14.0" textAlignment="CENTER" textFill="#f60000">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
