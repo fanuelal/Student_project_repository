@@ -1,0 +1,20 @@
+.lgnbtn{
+    -fx-background-color: white;
+}
+.lgnbtn:hover{
+    -fx-background-color: rgb(31, 3, 188);
+}
+#loginSmallBox{
+    -fx-background-radius: 15px;
+}
+.inputFileds{
+    -fx-border-color: rgb(18, 154, 0);
+    -fx-border-radius: 0px;
+}
+.closebtn{
+    -fx-background-color: white;
+}
+#splashBody{
+    -fx-background-color: linear-gradient(from 25px 50px to 100px 300px , black, #137cc3);
+    background: #f0f0f0;
+}

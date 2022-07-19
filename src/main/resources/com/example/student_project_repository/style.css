@@ -1,6 +1,59 @@
 .button {
-    -fx-background-color: green;
+    -fx-background-color: none;
 }
 .button:hover {
-    -fx-background-color: gray;
+    -fx-background-color:  linear-gradient(from 25px 25px to 150px 500px , #2338a6,   #FA2C56);
+    -fx-text-fill: black;
+    -fx-border: white transparent  transparent transparent;
 }
+.navbtn:hover{
+    -fx-background-color: white;
+}
+.button:hover .fontIcons{
+        -fx-fill: black;
+}
+.button:pressed {
+    -fx-background-color: brown;
+    -fx-border: white transparent  transparent transparent;
+}
+
+.lgnbtn{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+.lgnbtn:hover{
+    -fx-background-color: #FA2C56;
+}
+#loginSmallBox{
+    -fx-background-radius: 15px;
+}
+.inputFileds{
+    -fx-border-color: rgb(18, 50, 100);
+    -fx-border-radius: 0 30 30 0;
+    -fx-background-radius: 0 20 20 0;
+}
+.closebtn{
+    -fx-background-color: white;
+}
+#closebtn{
+-fx-background-color: white;
+}
+#closebtn:hover{
+    -fx-background-color: red;
+}
+#closebtn:hover .closeIcon{
+    -fx-fill: white;
+}
+.mainpane{
+    -fx-background-color: smokewhite;
+}
+.updatePassaFiled, .withdrawalField{
+    -fx-background-color: white;
+    -fx-border: transparent transparent transparent transparent;
+    -fx-background-radius: 5;
+}
+.updatePassaFiledbtn{
+    -fx-background-color:   #FA2C56;
+    -fx-border: transparent transparent transparent transparent;
+    -fx-background-radius: 10;
+    }
